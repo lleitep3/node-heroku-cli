@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  node_heroku_cli:
+    image: node-heroku-cli
+    container_name: node-heroku-cli
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args:
+        - HEROKU_API_KEY=4f1dea13-d866-4bb3-abf4-b347097ae9c5 # token fake
+
+    environment:
+      - HEROKU_API_KEY=6e4480c6-5f79-4d93-aca9-b6580d382fc0 # token fake
+
+    network_mode: host
