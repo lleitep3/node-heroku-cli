@@ -3,7 +3,9 @@ node-heroku-cli
 
 Docker image with heroku cli installed to deploy node applications on from pipelines.
 
-## Based on `node:slim` image.
+## Avaliable tags
+ - `node-heroku-cli:latest` (Based on `node:slim` image.)
+ - `node-heroku-cli:docker` (Based on `docker:dind` image.)
 
 ## What is Installed?
  - [heroku cli VIA npm](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
